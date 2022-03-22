@@ -1,0 +1,102 @@
+/* about me */
+.main.about {
+  display: flex;
+}
+.main.about::before {
+  clip-path: polygon(0 20%, 100% 44%, 100% 100%, 0 100%);
+  background: rgb(236, 234, 234);
+}
+.header.about {
+  background-color: #3b3c39;
+}
+.header.about > a {
+  margin-bottom: 0;
+}
+.header.about > a:hover {
+  color: rgb(151, 145, 145);
+  border-bottom: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.content.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  height: 80%;
+}
+p {
+  font-size: 2rem;
+  color: rgb(151, 145, 145);
+  font-style: oblique;
+  text-align: justify;
+  padding-top: 1rem;
+}
+.side1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 2rem;
+  min-width: 80%;
+  max-height: 80%;
+  overflow: scroll;
+}
+.side2 {
+  display: flex;
+}
+.profile_img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0.5rem 0.5rem 0.4rem rgb(110, 108, 108);
+}
+.footer_background {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .main.about::before {
+    clip-path: polygon(0 15%, 100% 54%, 100% 100%, 0 100%);
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .content.about {
+    height: 85%;
+  }
+  .profile_img {
+    max-width: 110%;
+    margin-top: -100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  .main.about::before {
+    clip-path: polygon(0 8%, 100% 44%, 100% 100%, 0 100%);
+  }
+  .content.about {
+    height: 90%;
+  }
+  .profile_img {
+    max-width: 100%;
+    margin-top: 30%;
+  }
+  .footer_background {
+    display: block;
+    height: 15vh;
+    width: 100vh;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+}

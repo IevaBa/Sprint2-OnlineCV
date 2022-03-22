@@ -1,0 +1,115 @@
+/* work experience */
+.main.experience::before {
+  background: rgb(236, 234, 234);
+}
+.header.experience {
+  background-color: #3b3c39;
+}
+.header.experience > a {
+  margin-bottom: 0;
+}
+.header.experience > a:hover {
+  color: rgb(151, 145, 145);
+  border-bottom: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.content.experience {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  column-gap: 3rem;
+  height: 100%;
+  overflow: auto;
+  padding: 0rem 1rem;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 2rem;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-style: normal;
+  padding-top: 1.5rem;
+  color: black;
+}
+h3 {
+  font-size: 1.3rem;
+  color: rgb(151, 145, 145);
+  font-style: oblique;
+  font-weight: bolder;
+}
+p {
+  text-align: justify;
+}
+li {
+  text-indent: 1rem;
+  margin-left: 2rem;
+}
+.last_word {
+  color: rgb(151, 145, 145);
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.icon {
+  padding: 0.2rem;
+  height: 5rem;
+  width: 5.6rem;
+  border: none;
+  margin: 0.5rem;
+}
+.html {
+  color: #e96228;
+}
+.css {
+  color: #2f84c1;
+}
+.js {
+  color: #efd81d;
+}
+.react {
+  color: #5ed3f3;
+}
+.git {
+  color: #e84d31;
+}
+.php {
+  color: #697ab1;
+}
+.oop {
+  background-color: #efefef;
+}
+.mysql {
+  background-color: #efefef;
+}
+.laravel {
+  background-color: #efefef;
+  color: #da2e10;
+}
+@media only screen and (max-width: 1000px) {
+  .main.experience {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+  }
+  .content.experience {
+    column-gap: 1rem;
+    padding: 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content.experience {
+    grid-template-columns: auto;
+  }
+  .side.right {
+    padding-top: 0;
+  }
+}
