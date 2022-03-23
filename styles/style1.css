@@ -52,6 +52,7 @@ p {
   max-width: 80%;
   height: auto;
   box-shadow: 0.5rem 0.5rem 0.4rem rgb(110, 108, 108);
+  filter: brightness(1.2);
 }
 .footer_background {
   display: none;
