@@ -96,7 +96,7 @@ p {
   .footer_background {
     display: block;
     height: 15vh;
-    width: 100vh;
+    max-width: 600px;
     object-fit: cover;
     opacity: 0.6;
   }

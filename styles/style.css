@@ -95,7 +95,7 @@ h2 {
 }
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr 1.2fr;
   min-height: 8%;
   max-height: 12%;
   width: 100%;
@@ -120,7 +120,8 @@ h2 {
 .email {
   display: grid;
   grid-template-columns: 5% 95%;
-  column-gap: 1rem;
+  column-gap: 0.7rem;
+
   align-items: center;
 }
 @media only screen and (max-width: 900px) {
@@ -136,6 +137,9 @@ h2 {
   .footer {
     font-size: 1.4rem;
     padding-right: 1rem;
+  }
+  .media > a {
+    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -155,7 +159,10 @@ h2 {
     border: 0;
   }
   .footer {
-    font-size: 1.3rem;
-    padding-right: 1rem;
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+  }
+  .media > a {
+    padding-left: 0.5rem;
   }
 }
