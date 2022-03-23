@@ -1,6 +1,6 @@
 # Sprint2 project
 ## I created Online CV using HTML and raw CSS.
-### The website includes following features:
+### The website include following features:
 * consists of 4 pages;
 * have navigation in header;
 * layout has been created using grid and flexbox;
