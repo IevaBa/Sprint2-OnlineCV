@@ -45,6 +45,8 @@ p {
 }
 .side2 {
   display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .profile_img {
   border-radius: 50%;
@@ -72,8 +74,7 @@ p {
     height: 85%;
   }
   .profile_img {
-    max-width: 110%;
-    margin-top: -100%;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -91,13 +92,13 @@ p {
   }
   .profile_img {
     max-width: 100%;
-    margin-top: 30%;
   }
   .footer_background {
     display: block;
-    height: 15vh;
+    max-height: 10vh;
     max-width: 600px;
     object-fit: cover;
     opacity: 0.6;
+    bottom: 0;
   }
 }
