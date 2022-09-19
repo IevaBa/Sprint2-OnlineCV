@@ -22,4 +22,4 @@
 
 Go to the link below to preview
 
-- https://ievaba.github.io/Sprint2/
+- https://ievaba.github.io/Sprint2-OnlineCV
